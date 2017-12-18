@@ -79,5 +79,13 @@ public class SystemController_Script : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetKeyDown(KeyCode.J)){
+			//Inicia vizualização de acordo como a instancia do elemento passado por parâmetro se pressionar J no teclado 
+			novo_Elemento(new Elemento_Script(10, 10, 3, 4, 0, 6, 0, 8, "CO2", "C", "O2"));
+		}
+		if(Input.GetKeyDown(KeyCode.K)){
+			//Destroi elemento do estado atual e sua vizualização se pressionar K no teclado
+			novo_Elemento(null);
+		}
 	}
 }
