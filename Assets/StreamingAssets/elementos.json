@@ -1,0 +1,73 @@
+{
+"elementos":[
+  {
+    "nome": "Hidrogenio",
+    "simbolo": "H",
+    "protons": 1,
+    "neutrons": 0,
+    "eletrons": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "combinacoes": [
+      {"other": "O", "result" : "H20"},
+      {"other": "O", "result" : "H2O2"},
+      {"other": "O", "result" : "OH"},
+      {"other": "O", "result" : "COH"},
+      {"other": "C", "result" : "COH"}
+    ]
+  },
+  {
+    "nome": "Oxigenio",
+    "simbolo": "O",
+    "protons": 8,
+    "neutrons": 8,
+    "eletrons": [
+      2,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "combinacoes": [
+      {"other": "C", "result" : "CO2"},
+      {"other": "C", "result" : "CO"},
+      {"other": "C", "result" : "CO2"},
+      {"other": "C", "result" : "COH"},
+      {"other": "H", "result" : "COH"},
+      {"other": "H", "result" : "H2O"},
+      {"other": "H", "result" : "H2O2"},
+      {"other": "O", "result" : "O2"}
+    ]
+  },
+  {
+    "nome": "Carbono",
+    "simbolo": "C",
+    "protons": 6,
+    "neutrons": 6,
+    "eletrons": [
+      2,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "combinacoes": [
+      {"other": "O", "result" : "CO2"},
+      {"other": "O", "result" : "CO"},
+      {"other": "O", "result" : "COH"},
+      {"other": "H", "result" : "COH"},
+      {"other": "H", "result" : "CH"}
+    ]
+  }
+]
+}
