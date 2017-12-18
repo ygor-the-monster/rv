@@ -52,8 +52,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camada_Script.cs" />
+     <Compile Include="Assets\Scripts\Canhao_Script.cs" />
+     <Compile Include="Assets\Scripts\Canvas_Script.cs" />
      <Compile Include="Assets\Scripts\ElementoController_Script.cs" />
+     <Compile Include="Assets\Scripts\Eletron_Script.cs" />
      <Compile Include="Assets\Scripts\Nucleo_Script.cs" />
+     <Compile Include="Assets\Scripts\Proton_Script.cs" />
      <Compile Include="Assets\Scripts\SystemController_Script.cs" />
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>

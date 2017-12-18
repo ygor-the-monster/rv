@@ -23,13 +23,14 @@ public class ElementoController_Script : MonoBehaviour {
 
     public void set_Elemento(Elemento_Script elemento){
 		this.elemento = elemento;
-		(nucleo_Inspector.GetComponent(typeof(Nucleo_Script)) as Nucleo_Script).setProtons(elemento.n_atomos_elemA, elemento.n_atomos_elemB);
+		(nucleo_Inspector.GetComponent(typeof(Nucleo_Script)) as Nucleo_Script).setProtons(elemento.n_atomos_elemA, elemento.n_atomos_elemB, nucleo_Inspector);
 		(camada1_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).setEletrons(elemento.s1);
 		(camada2_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).setEletrons(elemento.s2);
 		(camada3_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).setEletrons(elemento.s3);
 		(camada4_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).setEletrons(elemento.s4);
 		(camada5_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).setEletrons(elemento.s5);
 		(camada6_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).setEletrons(elemento.s6);
+
 	}
 
 	void Awake(){
@@ -53,32 +54,32 @@ public class ElementoController_Script : MonoBehaviour {
 			}else if(executando_animacao <= 6){
 				switch(executando_animacao){
 					case 1:
-						(camada1_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao();
+						(camada1_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao(4f, transform.position);
 						executando_animacao += (camada1_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).pronto();
 					break;
 						
 					case 2:
-						(camada2_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao();
+						(camada2_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao(5f, transform.position);
 						executando_animacao += (camada2_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).pronto();
 					break;
 
 					case 3:
-						(camada3_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao();
+						(camada3_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao(6f, transform.position);
 						executando_animacao += (camada3_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).pronto();
 					break;
 
 					case 4:
-						(camada4_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao();
+						(camada4_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao(7f, transform.position);
 						executando_animacao += (camada4_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).pronto();
 					break;
 					
 					case 5:
-						(camada5_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao();
+						(camada5_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao(8f, transform.position);
 						executando_animacao += (camada5_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).pronto();
 					break;
 
 					case 6:
-						(camada6_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao();
+						(camada6_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).animacao(9f, transform.position);
 						executando_animacao += (camada6_Inspector.GetComponent(typeof(Camada_Script)) as Camada_Script).pronto();
 					break;
 				}
